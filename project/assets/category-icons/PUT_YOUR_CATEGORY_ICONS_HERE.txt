@@ -1,0 +1,15 @@
+🎯 CATEGORY ICONS FOLDER
+
+Put your data category icons here!
+
+Common icons needed:
+- personal-info.png    (for Personal Info)
+- financial-info.png   (for Financial Info)
+- location.png         (for Location)
+- device.png           (for Device IDs)
+- photos.png           (for Photos & Videos)
+- messages.png         (for Messages)
+- app-activity.png     (for App Activity)
+
+Recommended size: 48x48px or 64x64px
+Format: PNG (transparent) or SVG

@@ -1,0 +1,10 @@
+🎨 UI IMAGES FOLDER
+
+Put any other UI images here!
+
+Examples:
+- logo.png
+- background.jpg
+- banner.png
+
+Use any format: PNG, JPG, SVG

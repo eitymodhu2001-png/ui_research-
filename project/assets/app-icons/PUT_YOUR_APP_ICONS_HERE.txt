@@ -1,0 +1,12 @@
+📱 APP ICONS FOLDER
+
+Put your app logo images here!
+
+Examples:
+- whatsapp.png
+- linkedin.png
+- discord.png
+- chess.png
+
+Recommended size: 512x512px
+Format: PNG (transparent) or JPG

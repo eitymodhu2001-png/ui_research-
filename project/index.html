@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Data Safety Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <span class="icon">📱</span>
+                <h1>Applications</h1>
+            </div>
+
+            <input
+                type="text"
+                class="search-bar"
+                id="searchBar"
+                placeholder="Search apps..."
+            />
+
+            <div class="apps-grid" id="appsGrid">
+                <!-- Apps will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- App Detail Modal -->
+        <div class="modal-overlay" id="appDetailModal" style="display: none;">
+            <div class="app-detail-modal">
+                <div class="modal-header">
+                    <button class="back-button" id="closeAppDetail">
+                        ←
+                    </button>
+                    <span>Home</span>
+                    <button class="menu-button">⋮</button>
+                </div>
+
+                <div class="modal-content">
+                    <div class="app-detail-header">
+                        <div class="app-detail-icon" id="appDetailIcon">
+                            <!-- App icon will be inserted here -->
+                        </div>
+                        <div class="app-detail-info">
+                            <h2 id="appDetailName"></h2>
+                            <p id="appDetailCategory"></p>
+                            <p style="font-size: 0.8rem; margin-top: 5px;" id="appDetailExtras">Contains ads · In-app Purchases</p>
+                        </div>
+                    </div>
+
+                    <div class="app-stats">
+    <div class="stat">
+        <div class="stat-value" id="statRating"></div>
+        <div class="stat-label" id="statRatingLabel"></div>
+    </div>
+
+    <div class="stat">
+        <div class="stat-value">📥</div>
+        <div class="stat-label" id="statDownloads1"></div> </div>
+
+    <div class="stat">
+        <div class="stat-value">[3+]</div>
+        <div class="stat-label">Rated for 3+</div>
+    </div>
+
+    <div class="stat">
+        <div class="stat-value" id="statDownloads2"></div>
+        <div class="stat-label">Downloads</div>
+    </div>
+</div>
+
+<button class="install-button">
+    Install
+</button>
+
+
+                    <div class="app-screenshots" id="appScreenshots">
+                        <!-- Screenshots will be dynamically inserted here -->
+                    </div>
+
+                    <div class="about-section">
+                        <h3>About this app ⓘ</h3>
+                        <p id="aboutText"></p>
+                    </div>
+
+                    <div class="data-safety-section">
+                        <div class="section-header">
+                            <h3 class="section-title">Data safety →</h3>
+                        </div>
+                        <p class="section-subtitle">We want you to stay informed.</p>
+
+                       <div class="safety-box" id="openDataReport">
+    <span class="safety-icon">⇄</span>
+    <div class="safety-content">
+        <div class="safety-title">
+            Data Collection & Sharing <span class="arrow-icon">→</span>
+        </div>
+        <div class="safety-description">See what data is collected and shared with third parties</div>
+    </div>
+</div>
+
+                        <div class="security-practices" id="securityPractices">
+                            <h4 class="security-title">Security Practices</h4>
+                            <!-- Security items will be dynamically inserted -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Report Modal -->
+        <div class="modal-overlay" id="dataReportModal" style="display: none;">
+            <div class="data-report-modal">
+                <div class="report-header">
+                    <div class="report-header-top">
+                        <button class="back-button" id="closeDataReport">
+                            ←
+                        </button>
+                        <div class="report-icon" id="reportIcon">
+                            <!-- Report icon will be inserted here -->
+                        </div>
+                        <div class="report-title">
+                            <h2 id="reportTitle">Data safety report</h2>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <span class="legend-arrow" style="color: var(--accent-risk)">←</span>
+                            <span>= Shared (Risk)</span>
+                        </div>
+                        <div class="legend-item">
+                            <span>Collected (Safe)</span>
+                            <span class="legend-arrow" style="color: var(--accent-safe)">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-content" id="reportContent">
+                    <!-- Category cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load your custom data file -->
+    <script src="my-data.js"></script>
+    <!-- Load the main app -->
+    <script src="app.js"></script>
+</body>
+</html>

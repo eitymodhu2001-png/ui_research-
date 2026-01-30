@@ -1,0 +1,12 @@
+📸 SCREENSHOTS FOLDER
+
+Put your app screenshot images here!
+
+Naming examples:
+- whatsapp-1.png
+- whatsapp-2.png
+- linkedin-1.png
+- discord-1.png
+
+Recommended size: 1080x1920px (mobile portrait)
+Format: PNG or JPG
