@@ -1866,6 +1866,387 @@ const appsData = [
         }
     },
 
+    {
+    id: 'minecraft',
+    name: 'Minecraft: Dream it, Build it!',
+    category: 'Adventure',
+    icon: '⛏️',
+    iconUrl: 'assets/app-icons/minecraft.png',
+    rating: '4.6',
+    downloads: '50M+',
+    size: '579 MB',
+    description: 'Build, explore, and survive in infinite worlds.',
+    
+    screenshots: [
+        'assets/screenshots/minecraft-1.png',
+        'assets/screenshots/minecraft-2.png',
+        'assets/screenshots/minecraft-3.png'
+    ],
+    
+    data: {
+        appName: 'Minecraft: Dream it, Build it!',
+        reportTitle: 'Data safety report',
+        legend: {
+            shared: 'Shared (Risk)',
+            collected: 'Collected (Safe)'
+        },
+        
+        categories: [
+            {
+                id: 'personal-info',
+                name: 'Personal Info',
+                icon: '👤',
+                iconUrl: 'assets/category-icons/personal-info.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['User IDs'],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Personalization'
+                    },
+                    collected: {
+                        items: [
+                            'Name (optional)',
+                            'Email address (optional)',
+                            'User IDs',
+                            'Phone number (optional)'
+                        ],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Fraud prevention, security, and compliance, Personalization, Account management'
+                    }
+                }
+            },
+            {
+                id: 'location',
+                name: 'Location',
+                icon: '📍',
+                iconUrl: 'assets/category-icons/location.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Approximate location'],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Personalization'
+                    },
+                    collected: {
+                        items: ['Approximate location'],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Personalization'
+                    }
+                }
+            },
+            {
+                id: 'messages',
+                name: 'Messages',
+                icon: '💬',
+                iconUrl: 'assets/category-icons/messages.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: ['Other in-app messages'],
+                        purpose: 'App functionality, Analytics, Fraud prevention, security, and compliance'
+                    }
+                }
+            },
+            {
+                id: 'app-activity',
+                name: 'App Activity',
+                icon: '📊',
+                iconUrl: 'assets/category-icons/activity.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['App interactions'],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing'
+                    },
+                    collected: {
+                        items: [
+                            'App interactions',
+                            'In-app search history',
+                            'Other user-generated content',
+                            'Other actions'
+                        ],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Fraud prevention, security, and compliance, Personalization'
+                    }
+                }
+            },
+            {
+                id: 'device-info',
+                name: 'Device or other IDs',
+                icon: '📱',
+                iconUrl: 'assets/category-icons/device.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: ['Device or other IDs'],
+                        purpose: 'App functionality, Analytics, Fraud prevention, security, and compliance'
+                    }
+                }
+            },
+            {
+                id: 'financial-info',
+                name: 'Financial Info',
+                icon: '💳',
+                iconUrl: 'assets/category-icons/financial.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: [
+                            'User payment info (optional)',
+                            'Purchase history'
+                        ],
+                        purpose: 'App functionality, Analytics, Fraud prevention, security, and compliance, Personalization'
+                    }
+                }
+            },
+            {
+                id: 'app-performance',
+                name: 'App Info and Performance',
+                icon: '⚡',
+                iconUrl: 'assets/category-icons/performance.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: [
+                            'Crash logs',
+                            'Diagnostics',
+                            'Other app performance data'
+                        ],
+                        purpose: 'App functionality, Analytics'
+                    }
+                }
+            }
+        ],
+        
+        securityPractices: {
+            dataEncryptedInTransit: true,
+            dataCanBeDeleted: true
+        }
+    }
+},
+
+// ============================================
+// EA SPORTS FC MOBILE
+// ============================================
+{
+    id: 'ea-fc-mobile',
+    name: 'EA SPORTS FC™ Mobile Soccer',
+    category: 'Sports',
+    icon: '⚽',
+    iconUrl: 'assets/app-icons/ea-fc.png',
+    rating: '4.1',
+    downloads: '500M+',
+    size: '130 MB',
+    description: 'Build your Ultimate Team and compete in soccer matches.',
+    
+    screenshots: [
+        'assets/screenshots/ea-fc-1.png',
+        'assets/screenshots/ea-fc-2.png',
+        'assets/screenshots/ea-fc-3.png'
+    ],
+    
+    data: {
+        appName: 'EA SPORTS FC™ Mobile Soccer',
+        reportTitle: 'Data safety report',
+        legend: {
+            shared: 'Shared (Risk)',
+            collected: 'Collected (Safe)'
+        },
+        
+        categories: [
+            {
+                id: 'personal-info',
+                name: 'Personal Info',
+                icon: '👤',
+                iconUrl: 'assets/category-icons/personal-info.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: [
+                            'Name (optional)',
+                            'User IDs'
+                        ],
+                        purpose: 'App functionality, Analytics, Fraud prevention, security, and compliance, Personalization, Account management'
+                    }
+                }
+            },
+            {
+                id: 'location',
+                name: 'Location',
+                icon: '📍',
+                iconUrl: 'assets/category-icons/location.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Approximate location'],
+                        purpose: 'Advertising or marketing'
+                    },
+                    collected: {
+                        items: ['Approximate location'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance, Personalization'
+                    }
+                }
+            },
+            {
+                id: 'photos-videos',
+                name: 'Photos and Videos',
+                icon: '📷',
+                iconUrl: 'assets/category-icons/photos.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: [
+                            'Photos (optional)',
+                            'Videos (optional)'
+                        ],
+                        purpose: 'App functionality'
+                    }
+                }
+            },
+            {
+                id: 'app-activity',
+                name: 'App Activity',
+                icon: '📊',
+                iconUrl: 'assets/category-icons/activity.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: ['Other actions'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance, Personalization'
+                    }
+                }
+            },
+            {
+                id: 'device-info',
+                name: 'Device or other IDs',
+                icon: '📱',
+                iconUrl: 'assets/category-icons/device.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Device or other IDs'],
+                        purpose: 'Advertising or marketing'
+                    },
+                    collected: {
+                        items: ['Device or other IDs (optional)'],
+                        purpose: 'App functionality, Analytics, Developer communications, Advertising or marketing, Fraud prevention, security, and compliance, Personalization, Account management'
+                    }
+                }
+            },
+            {
+                id: 'financial-info',
+                name: 'Financial Info',
+                icon: '💳',
+                iconUrl: 'assets/category-icons/financial.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: ['Purchase history'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance, Personalization, Account management'
+                    }
+                }
+            },
+            {
+                id: 'app-performance',
+                name: 'App Info and Performance',
+                icon: '⚡',
+                iconUrl: 'assets/category-icons/performance.png',
+                status: {
+                    shared: false,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [],
+                        purpose: null
+                    },
+                    collected: {
+                        items: [
+                            'Crash logs',
+                            'Diagnostics',
+                            'Other app performance data'
+                        ],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    }
+                }
+            }
+        ],
+        
+        securityPractices: {
+            dataEncryptedInTransit: true,
+            dataCanBeDeleted: true
+        }
+    }
+},
+
+
     // ============================================
     // BUMBLE DATING APP
     // ============================================
@@ -2143,6 +2524,183 @@ const appsData = [
             }
         }
     },
+
+
+    {
+    id: 'subway-surfers',
+    name: 'Subway Surfers',
+    category: 'Arcade',
+    icon: '🏃',
+    iconUrl: 'assets/app-icons/subway-surfers.png',
+    rating: '4.3',
+    downloads: '1B+',
+    size: '143 MB ',
+    description: 'Dash through the subway and dodge oncoming trains!',
+    
+    screenshots: [
+        'assets/screenshots/subway-surfers-1.png',
+        'assets/screenshots/subway-surfers-2.png',
+        'assets/screenshots/subway-surfers-3.png'
+    ],
+    
+    data: {
+        appName: 'Subway Surfers',
+        reportTitle: 'Data safety report',
+        legend: {
+            shared: 'Shared (Risk)',
+            collected: 'Collected (Safe)'
+        },
+        
+        categories: [
+            {
+                id: 'personal-info',
+                name: 'Personal Info',
+                icon: '👤',
+                iconUrl: 'assets/category-icons/personal-info.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['User IDs'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    },
+                    collected: {
+                        items: ['User IDs'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    }
+                }
+            },
+            {
+                id: 'location',
+                name: 'Location',
+                icon: '📍',
+                iconUrl: 'assets/category-icons/location.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Approximate location'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    },
+                    collected: {
+                        items: ['Approximate location'],
+                        purpose: 'App functionality, Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    }
+                }
+            },
+            {
+                id: 'app-activity',
+                name: 'App Activity',
+                icon: '📊',
+                iconUrl: 'assets/category-icons/activity.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: [
+                            'App interactions',
+                            'Other actions'
+                        ],
+                        purpose: 'Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    },
+                    collected: {
+                        items: [
+                            'App interactions',
+                            'Other actions'
+                        ],
+                        purpose: 'Analytics, Advertising or marketing, Fraud prevention, security, and compliance'
+                    }
+                }
+            },
+            {
+                id: 'device-info',
+                name: 'Device or other IDs',
+                icon: '📱',
+                iconUrl: 'assets/category-icons/device.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Device or other IDs'],
+                        purpose: 'App functionality, Analytics'
+                    },
+                    collected: {
+                        items: ['Device or other IDs'],
+                        purpose: 'Analytics'
+                    }
+                }
+            },
+            {
+                id: 'financial-info',
+                name: 'Financial Info',
+                icon: '💳',
+                iconUrl: 'assets/category-icons/financial.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Purchase history'],
+                        purpose: 'Advertising or marketing'
+                    },
+                    collected: {
+                        items: ['Purchase history (optional)'],
+                        purpose: 'Advertising or marketing'
+                    }
+                }
+            },
+            {
+                id: 'app-performance',
+                name: 'App Info and Performance',
+                icon: '⚡',
+                iconUrl: 'assets/category-icons/performance.png',
+                status: {
+                    shared: true,
+                    collected: true
+                },
+                details: {
+                    shared: {
+                        items: ['Diagnostics'],
+                        purpose: 'App functionality, Analytics'
+                    },
+                    collected: {
+                        items: [
+                            'Crash logs',
+                            'Diagnostics',
+                            'Other app performance data'
+                        ],
+                        purpose: 'App functionality, Analytics'
+                    }
+                }
+            }
+        ],
+        
+        securityPractices: {
+            dataEncryptedInTransit: true,
+            dataCanBeDeleted: true
+        }
+    }
+},
+
+
+
+
+
+
+
+
+
+
+
 
 
     {
